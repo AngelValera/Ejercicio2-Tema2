@@ -4,5 +4,5 @@ node_js:
   - "4.2.1"
 
 before_install:
-  cd CalificacionEmpresas
+  cd votaEmpresa
   npm install
