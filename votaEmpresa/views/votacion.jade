@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Estas autentificado como <b> #{usuario} </b>
+  
+  form#formLogout(name="logout",method="post",action="/salir")
+    button#btnSubmit(type="submit") Log out
+    
+  form#formLogout(name="votar",method="get",action="/mostrarEmpresas")
+    button#btnSubmit(type="submit") Votar

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 Puntúa una de estas empresas
+  div#votacion
+  form#formLogout(name='volver',method='get',action='/votacion')
+    button#btnSubmit(type="submit") Volver atrás        
+  form(action='/registrarVoto', method='post') 
+      label(for='txtEmpresa')
+        select(id="txtEmpresa", name="txtEmpresa")
+            each e, i in empresas
+              option(value= e.nombre)= e.nombre
+      label(for='txtNota')
+        select(id="txtNota", name="txtNota")
+          - for(var i = 0;i<=10;i++){
+              option(value="#{i}") #{i}
+          - }
+      button(type='submit') Puntuar  
+      
+  
+  
+        

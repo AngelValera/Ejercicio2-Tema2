@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  div
+    form(action='/inscribirEmpresa', method='post')
+      label(for='txtNombreEmpresa')
+        input(type='text', id=txtNombreEmpresa, name='txtNombreEmpresa', placeholder='Nombre de la empresa', class="input")      
+      button(type='submit') Inscribir
+  

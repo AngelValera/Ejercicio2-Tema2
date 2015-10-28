@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 CLASIFICACION
+  div#resultado
+  table
+    tr
+      td(align="center")
+        b Empresa
+      td(align="center")
+        b Alumno
+      td(align="center")
+        b Calificacion
+    each dato, i in datos
+      tr
+        td(align="center")
+          p= dato.empresa
+        
+        td(align="center")
+              p= dato.email
+          
+        td(align="center")
+                p= dato.nota    

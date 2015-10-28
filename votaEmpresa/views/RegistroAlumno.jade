@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  div
+    form(action='/registrarAlumno', method='post')
+      label(for='txtEmail')
+        input(type='mail', id=txtEmail, name='txtEmail', placeholder='Email')
+      label(for='txtNombre')
+        input(type='text', id=txtNombre, name='txtNombre', placeholder='Nombre alumno')
+      label(for='txtApellidos')
+        input(type='texto', id=txtApellidos, name='txtApellidos', placeholder='Apellidos alumno')  
+      label(for='txtClave')
+        input(type='password', id='txtClave', name='txtClave', placeholder='Contraseña')
+      button(type='submit') Registrar
+  

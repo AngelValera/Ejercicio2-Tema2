@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  div
+    form(action='/autenticar', method='post')
+      label(for='txtEmail')
+        input(type='mail', id=txtEmail, name='txtEmail', placeholder='email usuario')
+      label(for='txtClave')
+        input(type='password', id='txtClave', name='txtClave')
+      button(type='submit') Identificar
+  
+      

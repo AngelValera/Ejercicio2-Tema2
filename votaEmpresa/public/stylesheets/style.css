@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1{
+  align-self: center;
+  background-color: black;
+  color: white;
+  display: block;
+  width: 500px;
+}
+.input {
+  width: 400px;
+  height: 17px;
+}
