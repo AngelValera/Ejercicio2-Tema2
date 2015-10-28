@@ -6,3 +6,4 @@ node_js:
 before_install:
   cd votaEmpresa
   npm install
+	npm install -g mocha
